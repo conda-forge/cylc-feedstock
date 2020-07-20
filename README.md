@@ -5,7 +5,7 @@ Home: https://cylc.github.io
 
 Package license: GPL-2.0+
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A workflow engine for cycling systems
 
@@ -41,10 +41,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_python3.8</td>
+              <td>linux_python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9146&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cylc-feedstock?branchName=master&jobName=linux&configuration=linux_python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cylc-feedstock?branchName=master&jobName=linux&configuration=linux_python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
