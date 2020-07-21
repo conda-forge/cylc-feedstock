@@ -4,14 +4,14 @@
 # Using the name variable with the URL in line 14 is convenient
 # when copying and pasting from another recipe, but not really needed.
 {% set name = "cylc" %}
-{% set version = "8.0a1" %}
+{% set version = "8.0a2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 build:
-  number: 1
+  number: 0
   # Skip as Cylc requires Linux
   skip: True  # [py<37 or not linux]
 
@@ -22,8 +22,8 @@ requirements:
     - python
     - 'configurable-http-proxy >=4.1'
     - cylc-flow =={{ version }}
-    - cylc-uiserver ==0.1
-    - cylc-ui ==0.1
+    - cylc-uiserver ==0.2
+    - cylc-ui ==0.2
 
 test:
   imports:
