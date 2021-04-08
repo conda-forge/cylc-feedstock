@@ -27,7 +27,7 @@ test:
     - cylc.uiserver
   commands:
     - cylc --version
-    - cylc-uiserver --help
+    - cylc uiserver --help
     - configurable-http-proxy -V
 
 about:
