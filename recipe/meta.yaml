@@ -7,7 +7,7 @@ package:
 build:
   number: 0
   # Skip as Cylc requires Linux
-  skip: True  # [py<38 or not linux]
+  skip: True  # [py<37 or not linux]
 
 # Note: to pin build numbers, if necessary, e.g.:
 #    - cylc-flow {{ version }} *_3
