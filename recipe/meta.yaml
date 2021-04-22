@@ -1,4 +1,4 @@
-{% set version = "8.0b0" %}
+{% set version = "8.0b1" %}
 
 package:
   name: cylc
@@ -18,8 +18,8 @@ requirements:
     - python
     - 'configurable-http-proxy >=4.1'
     - cylc-flow =={{ version }}
-    - cylc-uiserver ==0.3.0
-    - cylc-ui ==0.3.0
+    - cylc-uiserver ==0.4.0
+    - cylc-ui ==0.4.0
 
 test:
   imports:
