@@ -6,8 +6,9 @@
 {% set name = "cylc" %}
 {% set version = "8.0rc1" %}
 
+
 package:
-  name: {{ name|lower }}
+  name: cylc
   version: {{ version }}
 
 build:
@@ -15,6 +16,8 @@ build:
   # Skip as Cylc requires Linux
   skip: True  # [py<37 or not linux]
 
+# Note: to pin build numbers, if necessary, e.g.:
+#    - cylc-flow {{ version }} *_3
 requirements:
   host:
     - python
@@ -31,22 +34,21 @@ test:
     - cylc.uiserver
   commands:
     - cylc --version
-    - cylc-uiserver --help
+    - cylc uiserver --help
     - configurable-http-proxy -V
 
 about:
   home: https://cylc.github.io
-  license: GPL-2.0+
-  license_family: GPL2
+  license: GPL-3.0-only
+  license_family: GPL3
   license_file: 'COPYING'
   summary: A workflow engine for cycling systems
   description: |
     Cylc is a general purpose workflow engine that orchestrates cycling
     workflows very efficiently. It was designed for production weather,
-    climate, and environmental forecasting systems, but it is not
-    specialized to those domains and is completely agnostic to the
-    applications it manages.
-  doc_url: https://cylc.github.io/documentation/
+    climate, and environmental forecasting systems, but it is not specialized
+    to those domains and is agnostic to the applications it manages.
+  doc_url: https://cylc.github.io/cylc-doc/
   dev_url: https://github.com/cylc/
 
 extra:
