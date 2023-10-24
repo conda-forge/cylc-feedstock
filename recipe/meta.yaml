@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
   # Skip as Cylc requires Linux
   skip: True  # [py<37 or not linux]
 
