@@ -152,6 +152,5 @@ Feedstock Maintainers
 =====================
 
 * [@hjoliver](https://github.com/hjoliver/)
-* [@kinow](https://github.com/kinow/)
 * [@oliver-sanders](https://github.com/oliver-sanders/)
 
